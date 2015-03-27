@@ -1,6 +1,10 @@
 # twacademia
 Quick hack of a twitter platform to track academic conference buzz
 
+# Example
+See the following link for an example of the current output: 
+http://twacademia.me/html/
+
 # Requirements
 python 2.7,
 virtualenv,

@@ -23,4 +23,9 @@ r = api.request('statuses/filter', {'track':'football,lithuania', 'filter_level'
 for i in r.get_iterator():
     if 'text' in i:
         print i['user']['name']
+        print i['user']['screen_name']
+        print i['created_at']
+        print i['favorite_count']
+        print i['retweet_count']
+        print i['user']['followers_count']
         print i['text']

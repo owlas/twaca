@@ -29,3 +29,6 @@ for i in r.get_iterator():
         print i['retweet_count']
         print i['user']['followers_count']
         print i['text']
+        print i['id_str']
+        print i['entities']['hashtags']
+        print i['entities']['urls']

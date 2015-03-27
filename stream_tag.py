@@ -30,5 +30,8 @@ for i in r.get_iterator():
         print i['user']['followers_count']
         print i['text']
         print i['id_str']
-        print i['entities']['hashtags']
-        print i['entities']['urls']
+        for h in i['entities']['hashtags']:
+            print h['text']
+        for u in i['entities']['urls']:
+            print u['expanded_url']
+

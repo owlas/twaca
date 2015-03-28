@@ -15,6 +15,4 @@ RUN pip install requests --upgrade
 # Add source files to the containiner
 ADD * twacademia/
 
-# Set up mysql database format
-RUN twacademia/set_up_sqltable.sh
 

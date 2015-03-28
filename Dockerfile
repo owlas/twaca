@@ -10,6 +10,7 @@ RUN apt-get install libmysqlclient-dev -y
 
 RUN pip install TwitterAPI
 RUN pip install MySQL-python
+RUN pip install requests --upgrade
 
 # Add source files to the containiner
 ADD * twacademia/

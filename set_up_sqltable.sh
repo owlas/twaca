@@ -1,7 +1,14 @@
 #!/bin/bash
 
 # Bash script to set up SQL table format
+
+# Intialise the database
+/usr/bin/mysql_install_db
+
+# Start mysql server
 service mysql restart
+
+# Construct table
 mysql -e "create database tweet"
 mysql tweet -e "create table tweet (id_str varchar(100) NOT NULL, primary key(id_str)) engine=InnoDB"
 mysql tweet -e "alter table tweet add column name varchar(100);"

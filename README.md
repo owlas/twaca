@@ -15,7 +15,7 @@ system `$ docker run -v /path/to/host/dir:/var/lib/mysql twaca
 3. Now choose a keyword (such as *football*) and start streaming football
 related tweets to your database `$ docker run -d -v
 /path/to/host/dir:/var/lib/mysql twaca /bin/sh -c "service mysql start &&
-python twacademia/stream_tags.py football"
+python twacademia/stream_tags.py football"`
 
 The daemonized container will run until you stop it. The data will be saved in
 the mounted volume /path/to/host/dir which can then be accessed through
